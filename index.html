@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAROON JAMFEST 2026 | HOME</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" data-bs-smooth-scroll="true" tabindex="0">
+
+<!--HEADER-->
+<div id="header">
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <img id="logo" src="logo.png" alt="Logo">
+        <span>MAROON JAMFEST 2026</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#criteria">CRITERIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#guidelines">GUIDELINES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scoringsheets">SCORING</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!--HOME-->
+<div id="home" class="pt-5 mt-5">
+  <video autoplay muted loop id="home-video">
+    <source src="home.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+</div>
+
+<!--CRITERIA-->
+<div id="criteria" class="pt-5 mt-5">
+
+  <h1>CRITERIA FOR JUDGING</h1>
+
+  <table>
+    <tr>
+      <th>CRITERIA</th>
+      <th>PERCENTAGE</th>
+    </tr>
+    <tr>
+      <td>Musicality (Harmony, Rhythm, Sound Quality)</td>
+      <td>60%</td>
+    </tr>
+    <tr>
+      <td>Performance (Stage Presence, Crowd Engagement, Energy, Confidence)</td>
+      <td>30%</td>
+    </tr>
+    <tr>
+      <td>Audience Impact (General Impression, Audience Response)</td>
+      <td>10%</td>
+    </tr>
+    <tr>
+      <td><b>TOTAL</b></td>
+      <td><b>100%</b></td>
+    </tr>
+  </table>
+
+  <p><strong>Musicality:</strong> Evaluates the overall musical elements, including how well the harmony, rhythm, and sound quality blend to create a cohesive and pleasing performance.</p>
+  <p><strong>Performance:</strong> Assesses the performer's ability to command the stage, connect with the audience, display high energy, and exude confidence throughout the presentation.</p>
+  <p><strong>Audience Impact:</strong> Measures the overall impression left on the audience, including their reactions, engagement, and how memorable the performance is.</p>
+
+</div>
+
+<!--GUIDELINES-->
+<div id="guidelines" class="pt-5 mt-5">
+
+  <h1>PERFORMANCE GUIDELINES</h1>
+
+  <p>1. Each band must perform three (3) full songs:</p>
+  <div id="bullets">
+    <ul>
+      <li>One OPM song</li>
+      <li>One R&B song</li>
+      <li>One song of their choice</li>
+    </ul>
+  </div>
+
+  <p>2. The total performance time <span class="highlight">must not exceed 15 minutes</span>, including transitions.</p>
+  <p>3. Medley and special arrangement is not allowed.</p>
+  <p>4. Lyrics and performances <span class="highlight">MUST NOT HAVE OFFENSIVE LANGUAGES</span>.</p>
+
+</div>
+
+<!--SCORES-->
+<div id="scoringsheets" class="pt-5 mt-5">
+
+  <h1>SCORING SHEETS</h1>
+
+  <div id="scoring-buttons">
+    <div class="judge-buttons">
+      <button>Judge 1</button>
+      <button>Judge 2</button>
+      <button>Judge 3</button>
+      <button>Judge 4</button>
+      <button>Judge 5</button>
+    </div>
+
+    <div class="overall-buttons">
+      <button>Overall Tally Sheet</button>
+      <button>Awards Tally Sheet</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  new bootstrap.ScrollSpy(document.body, {
+    target: '#mainNav',
+    offset: 80
+  });
+</script>
+
+</body>
+</html>
